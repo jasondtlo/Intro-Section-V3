@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="javascript/script.js" defer></script>
+        <title>Snap</title>
+    </head>
+    <body>
+    <div id="test"></div>
+    <div class="container">
+        <div class="topsection">
+            <nav class="nav">
+                <div class="top">
+                        <div class="logo">
+                            <h2>snap</h2>
+                        </div>
+                        <div class="ddcontainer">
+                            <div class="flex">
+                                <a href="#" class="topitems">Features</a><img src="images/icon-arrow-down.svg" alt="arrow" class="arrowContainer">
+                            </div>
+                            <div class="dropdown">
+                                <div class="iconcontainer" id="todo"><div class="icon"><img src="images/icon-todo.svg" alt="todo"></div><div class="ddtxt"><a href="#">Todo List</a></div></div>
+                                <div class="iconcontainer"><div class="icon"><img src="images/icon-calendar.svg" alt="calendar"></div><div class="ddtxt"><a href="#">Calendar</a></div></div>
+                                <div class="iconcontainer" id="reminders"><div class="icon"><img src="images/icon-reminders.svg" alt="reminders"></div><div class="ddtxt"><a href="#">Reminders</a></div></div>
+                                <div class="iconcontainer"><div class="icon"><img src="images/icon-planning.svg" alt="planning"></div><div class="ddtxt"><a href="#">Planning</a></div></div>
+                            </div>
+                        </div>
+                        <div class="ddcontainer">
+                            <div class="flex">
+                                <a href="#" class="topitems">Company</a><img src="images/icon-arrow-down.svg" alt="arrow" class="arrowContainer">
+                            </div>
+                            <div class="dropdown" id="ddcompany">
+                                <a href="#">History</a>
+                                <a href="#">Our Team</a>
+                                <a href="#">Blog</a>
+                            </div>
+                        </div>
+                        <div class="pluh">
+                            <div class="pluh2">
+                                <div class="thing">
+                                    <a href="#" class="topitems">Careers</a>
+                                </div>
+                                <div class="thing">
+                                    <a href="#" class="topitems">About</a>
+                                </div>
+                            </div>
+                            <div class="topright" id="topright">
+                                <a href="#" class="topitems">Login</a>
+                                <button type="submit" class="button">Register</button>
+                            </div>
+                        </div>
+                </div>
+            </nav>
+        </div>
+        <div class="mobile">
+            <div class="topmobile">
+                <div class="snapmobile">
+                    <h2>snap</h2>
+                </div>
+
+                <div class="menumobile">
+                    <button onclick=toggleSidebar() class="togglebtn" id="openToggle">
+                        <img src="images/icon-menu.svg" alt="openmenu">
+                    </button>
+                </div>
+                <div class="sidebar" id="omo">
+                     <nav class="navmobile" id="sidebar">
+                         <div class="mobiletop">
+                            <div class="mobclosemenu">
+                                <button onclick=toggleSidebar() class="togglebtn" id="closeToggle">
+                                    <img src="images/icon-close-menu.svg" alt="closemenu">
+                                </button>
+                            </div>
+                            <div class="mobileddcontainer">
+                                <div class="dropdownbtn">
+                                    <button>
+                                        <span>Features</span>
+                                        <img src="images/icon-arrow-down.svg" alt="arrow" class="mobarrowContainer">
+                                    </button>
+                                </div>
+                                <div class="submenu">
+                                    <div class="picc"><div><img src="images/icon-todo.svg" alt="todo"></div><div><a href="#">Todo List</a></div></div>
+                                    <div class="picc"><div><img src="images/icon-calendar.svg" alt="calendar"></div><div><a href="#">Calendar</a></div></div>
+                                    <div class="picc"><div><img src="images/icon-reminders.svg" alt="reminders"></div><div><a href="#">Reminders</a></div></div>
+                                    <div class="picc"><div><img src="images/icon-planning.svg" alt="planning"></div><div><a href="#">Planning</a></div></div>
+                                </div>
+                            </div>
+                            <div class="mobileddcontainer">
+                                <div class="dropdownbtn">
+                                    <button>
+                                        <span>Company</span>
+                                        <img src="images/icon-arrow-down.svg" alt="arrow" class="mobarrowContainer">
+                                    </button>    
+                                </div>
+                                <div class="submenu">
+                                    <a href="#" class="picc">History</a>
+                                    <a href="#" class="picc">Our Team</a>
+                                    <a href="#" class="picc">Blog</a>
+                                </div>
+                            </div>
+                            <div class="mobpluh">
+                                <div class="mobpluh2">
+                                    <div class="active">
+                                        <a href="#" class="mobtopitems">Careers</a>
+                                    </div>
+                                    <div class="active">
+                                        <a href="#" class="mobtopitems">About</a>
+                                    </div>
+                                </div>
+                                <div class="marginauto" id="mobtopright">
+                                    <a href="#" class="mobtopitems">Login</a>
+                                </div>
+                                <div class="marginauto">
+                                    <button type="submit" class="mobbtn">Register</button>
+                                </div>
+                            </div>
+                         </div>
+                     </nav>
+                </div>
+            </div>
+            <div class="imgmobile">
+                <img src="images/image-hero-mobile.png" alt="">
+            </div>
+        </div>
+        
+        <!-- Bottom Section -->
+        <section>
+            <div class="bottomsection">
+                <div class="leftsection">
+                    <div class="bstext">
+                        <h1>Make <br>remote work</h1>
+                        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                    </div>
+                    <button type="submit" class="submit">Learn more</button>
+                    <div class="bottomimgs">
+                        <img src="images/client-databiz.svg" alt="databiz">
+                        <img src="images/client-audiophile.svg" alt="audiophile">
+                        <img src="images/client-meet.svg" alt="meet">
+                        <img src="images/client-maker.svg" alt="maker">
+                    </div>
+                </div>
+                <div class="rightsection">
+                    <img src="images/image-hero-desktop.png" alt="imgdesktop" class="imgdesktop">
+                </div>
+        </section>
+    </div>    
+</body>
+</html>
